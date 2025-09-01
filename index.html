@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion Titanes de Acero - Gimnasio de Elite</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <!-- Aquí va tu logo personalizado -->
+                    <img src="img/logo.png" alt="Lion Titanes de Acero" class="logo-img">
+                    <h1 class="logo-text">LION TITANES DE ACERO</h1>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" data-section="inicio">Inicio</a></li>
+                    <li><a href="#servicios" data-section="servicios">Servicios</a></li>
+                    <li><a href="#planes" data-section="planes">Planes</a></li>
+                    <li><a href="#coach" data-section="coach">Coach</a></li>
+                    <li><a href="#contacto" data-section="contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section - Inicio -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">TRANSFORMA TU CUERPO</h1>
+            <h2 class="hero-subtitle">DESPIERTA AL TITÁN QUE LLEVAS DENTRO</h2>
+            <p class="hero-description">El mejor gimnasio para alcanzar tus metas físicas con equipos de última generación y entrenadores expertos</p>
+            <button class="cta-button" onclick="scrollToSection('servicios')">VER SERVICIOS</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-placeholder">
+                <!-- Aquí va tu imagen hero personalizada -->
+                <img src="img/logo.png" alt="Gym Hero" class="hero-img">
+                <div class="hero-fallback">
+                    <i class="fas fa-dumbbell"></i>
+                    <p>TU IMAGEN PRINCIPAL AQUÍ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Espaciador para el hero fijo -->
+    <div class="hero-spacer"></div>
+
+    <!-- Main Content - Se desliza sobre el hero -->
+    <main class="main-content">
+        
+        <!-- Servicios Section -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title">NUESTROS SERVICIOS</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <!-- Aqui funcioneeeees eject -->
+                            <img src="img/Ejercicio1.jpg" alt="Ejercicios Funcionales" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-running"></i>
+                            </div>
+                        </div>
+                        <h3>Ejercicios Funcionales y Cardiovasculares</h3>
+                        <p>Mejora tu resistencia y fuerza con rutinas diseñadas para el movimiento natural del cuerpo</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/Ejercicio1.jpg" alt="Pérdida de Peso" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                        </div>
+                        <h3>Pérdida de Peso y Aumento de Masa Muscular</h3>
+                        <p>Programas específicos para transformar tu composición corporal de manera efectiva</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/Ejercicio1.jpg" alt="Artes Marciales" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-fist-raised"></i>
+                            </div>
+                        </div>
+                        <h3>Servicio de Artes Marciales</h3>
+                        <p>Aprende disciplina, técnica y autodefensa con instructores certificados</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/Ejercicio1.jpg" alt="Levantamiento de Pesas" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                        </div>
+                        <h3>Levantamiento de Pesas</h3>
+                        <p>Desarrolla fuerza máxima con equipos profesionales y técnicas avanzadas</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/Ejercicio1.jpg" alt="Entrenamiento Personal" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                        </div>
+                        <h3>Entrenamiento Personalizado</h3>
+                        <p>Planes individualizados tanto para hombres como para mujeres según sus objetivos</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="img/Ejercicio1.jpg" alt="Servicios Quiroprácticos" class="custom-icon">
+                            <div class="icon-fallback">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                        </div>
+                        <h3>Servicios Quiroprácticos</h3>
+                        <p>Tratamientos especializados para la salud de tu columna y sistema musculoesquelético</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planes Section -->
+        <section id="planes" class="pricing">
+            <div class="container">
+                <h2 class="section-title">PLANES DE ENTRENAMIENTO</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>PLAN DIARIO</h3>
+                            <div class="price">$2<span>/día</span></div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Acceso completo al gimnasio</li>
+                            <li><i class="fas fa-check"></i> Uso de equipos cardiovasculares</li>
+                            <li><i class="fas fa-check"></i> Área de pesas libres</li>
+                            <li><i class="fas fa-check"></i> Vestuarios y duchas</li>
+                        </ul>
+                        <button class="plan-button" onclick="selectPlan('PLAN DIARIO - $15/día')">ELEGIR PLAN</button>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">MÁS POPULAR</div>
+                        <div class="pricing-header">
+                            <h3>PLAN SEMANAL</h3>
+                            <div class="price">$15<span>/semana</span></div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Todo del plan diario</li>
+                            <li><i class="fas fa-check"></i> Clases grupales incluidas</li>
+                            <li><i class="fas fa-check"></i> 1 sesión de entrenamiento personal</li>
+                            <li><i class="fas fa-check"></i> Acceso a área funcional</li>
+                            <li><i class="fas fa-check"></i> Evaluación física inicial</li>
+                        </ul>
+                        <button class="plan-button" onclick="selectPlan('PLAN SEMANAL - $80/semana')">ELEGIR PLAN</button>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>PLAN MENSUAL</h3>
+                            <div class="price">$25.99<span>/mes</span></div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Todo del plan semanal</li>
+                            <li><i class="fas fa-check"></i> 4 sesiones de entrenamiento personal</li>
+                            <li><i class="fas fa-check"></i> Plan nutricional personalizado</li>
+                            <li><i class="fas fa-check"></i> Acceso a clases de artes marciales</li>
+                            <li><i class="fas fa-check"></i> Servicios quiroprácticos (2 sesiones)</li>
+                            <li><i class="fas fa-check"></i> Seguimiento mensual</li>
+                        </ul>
+                        <button class="plan-button" onclick="selectPlan('PLAN MENSUAL - $250/mes')">ELEGIR PLAN</button>
+                    </div>
+                    
+                    <div class="pricing-card premium">
+                        <div class="premium-badge">PREMIUM</div>
+                        <div class="pricing-header">
+                            <h3>PLAN ANUAL</h3>
+                            <div class="price">$280<span>/año</span></div>
+                        </div>
+                        <ul class="features">
+                            <li><i class="fas fa-check"></i> Todo incluido</li>
+                            <li><i class="fas fa-check"></i> Entrenamiento personal ilimitado</li>
+                            <li><i class="fas fa-check"></i> Servicios quiroprácticos ilimitados</li>
+                            <li><i class="fas fa-check"></i> Nutrición y seguimiento completo</li>
+                            <li><i class="fas fa-check"></i> Acceso VIP y horarios extendidos</li>
+                            <li><i class="fas fa-check"></i> Invitaciones para amigos (2/mes)</li>
+                        </ul>
+                        <button class="plan-button" onclick="selectPlan('PLAN ANUAL PREMIUM - $2500/año')">ELEGIR PLAN</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coach Section -->
+        <section id="coach" class="coach">
+            <div class="container">
+                <h2 class="section-title">NUESTROS COACHES</h2>
+                <div class="coach-grid">
+                    <div class="coach-card">
+                        <div class="coach-image">
+                            <!-- Aquí va la imagen de tu coach -->
+                            <img src="img/coach2.jpg" alt="Coach Principal" class="coach-photo">
+                            <div class="coach-fallback">
+                                <i class="fas fa-user"></i>
+                                <p>Foto del Coach 1</p>
+                            </div>
+                        </div>
+                        <div class="coach-info">
+                            <h3>CARLOS MENDOZA</h3>
+                            <p class="coach-title">Entrenador Principal & Fundador</p>
+                            <p class="coach-experience">+10 años de experiencia</p>
+                            <div class="coach-specialties">
+                                <span>Culturismo</span>
+                                <span>Funcional</span>
+                                <span>Artes Marciales</span>
+                            </div>
+                            <p class="coach-description">
+                                Especialista en transformación corporal con certificaciones internacionales. 
+                                Ha entrenado a más de 500 personas ayudándolas a alcanzar sus metas físicas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="coach-card">
+                        <div class="coach-image">
+                            <img src="img/coach2.jpg" alt="Coach Femenino" class="coach-photo">
+                            <div class="coach-fallback">
+                                <i class="fas fa-user"></i>
+                                <p>Foto del Coach 2</p>
+                            </div>
+                        </div>
+                        <div class="coach-info">
+                            <h3>ANA RODRIGUEZ</h3>
+                            <p class="coach-title">Especialista en Entrenamiento Femenino</p>
+                            <p class="coach-experience">+7 años de experiencia</p>
+                            <div class="coach-specialties">
+                                <span>Fitness Femenino</span>
+                                <span>Pilates</span>
+                                <span>Nutrición</span>
+                            </div>
+                            <p class="coach-description">
+                                Experta en programas específicos para mujeres, enfocada en fuerza funcional 
+                                y bienestar integral con un enfoque holístico del entrenamiento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">CONTÁCTANOS</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>INFORMACIÓN DE CONTACTO</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+593 99 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@liontitanes.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Santo Domingo, Ecuador</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Vie: 5:00-22:00 | Sáb-Dom: 6:00-20:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-section">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.771114561313!2d-79.20305379999999!3d-0.2787141999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d549e3c9f86f99%3A0xbcc8483cdcfbcfcb!2sTitanes%20de%20acero!5e0!3m2!1ses-419!2sec!4v1756348522189!5m2!1ses-419!2sec" 
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0; border-radius: 15px;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img src="img/logo.png" alt="Lion Titanes de Acero" class="footer-logo">
+                        <h3>LION TITANES DE ACERO</h3>
+                        <p>Transformando vidas a través del fitness y el entrenamiento de elite.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio" data-section="inicio">Inicio</a></li>
+                            <li><a href="#servicios" data-section="servicios">Servicios</a></li>
+                            <li><a href="#planes" data-section="planes">Planes</a></li>
+                            <li><a href="#coach" data-section="coach">Coach</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#">F<i class="fab fa-facebook"></i></a>
+                            <a href="#">I<i class="fab fa-instagram"></i></a>
+                            <a href="#">W<i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Lion Titanes de Acero. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Proceder con el Pago</h2>
+            <div class="selected-plan">
+                <h3 id="selectedPlanText">Plan Seleccionado</h3>
+            </div>
+            
+            <div class="payment-methods">
+                <h4>Métodos de Pago:</h4>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="transferencia" checked>
+                        <span>Transferencia Bancaria</span>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="efectivo">
+                        <span>Efectivo en Gimnasio</span>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="upload-section">
+                <h4>Subir Comprobante (Solo para transferencia):</h4>
+                <input type="file" id="paymentProof" accept="image/*" class="file-input">
+                <label for="paymentProof" class="file-label">
+                    <i class="fas fa-camera"></i> Subir Foto del Pago
+                </label>
+            </div>
+            
+            <button class="whatsapp-button" onclick="proceedToWhatsApp()">
+                <i class="fab fa-whatsapp"></i> Continuar por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
